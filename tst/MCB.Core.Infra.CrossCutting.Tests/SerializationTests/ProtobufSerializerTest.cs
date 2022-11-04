@@ -19,6 +19,7 @@ public class ProtobufSerializerTest
             UpdatedBy = null,
             UpdatedAt = null
         };
+        ProtobufSerializer.ConfigureTypeCollection(null);
         ProtobufSerializer.ConfigureTypeCollection(new[] { typeof(Customer) });
 
         // Act
