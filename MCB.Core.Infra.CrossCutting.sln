@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{550CDD9D-0ACE-4219-A48A-2E9B399C6264}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tst", "tst", "{2AFF81F9-E3D7-4554-8536-8BED701D69D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCB.Core.Infra.CrossCutting", "src\MCB.Core.Infra.CrossCutting\MCB.Core.Infra.CrossCutting.csproj", "{FB0595B8-F179-431D-AF56-4F471979DA38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCB.Core.Infra.CrossCutting.Tests", "tst\MCB.Core.Infra.CrossCutting.Tests\MCB.Core.Infra.CrossCutting.Tests.csproj", "{E9C5B7B8-FAF4-4620-BF01-8B3B0342523B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{120342A0-3DFD-4540-9C63-4CA55174B8E1}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build-and-test.yml = .github\workflows\build-and-test.yml
+		.github\workflows\pack-and-publish.yml = .github\workflows\pack-and-publish.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB0595B8-F179-431D-AF56-4F471979DA38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB0595B8-F179-431D-AF56-4F471979DA38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB0595B8-F179-431D-AF56-4F471979DA38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB0595B8-F179-431D-AF56-4F471979DA38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9C5B7B8-FAF4-4620-BF01-8B3B0342523B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9C5B7B8-FAF4-4620-BF01-8B3B0342523B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9C5B7B8-FAF4-4620-BF01-8B3B0342523B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9C5B7B8-FAF4-4620-BF01-8B3B0342523B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB0595B8-F179-431D-AF56-4F471979DA38} = {550CDD9D-0ACE-4219-A48A-2E9B399C6264}
+		{E9C5B7B8-FAF4-4620-BF01-8B3B0342523B} = {2AFF81F9-E3D7-4554-8536-8BED701D69D2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {285776BD-C9DB-41A5-9B2B-2BE41C6A7F67}
+	EndGlobalSection
+EndGlobal

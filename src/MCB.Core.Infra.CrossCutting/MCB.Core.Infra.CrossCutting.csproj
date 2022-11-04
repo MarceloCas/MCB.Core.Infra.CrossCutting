@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Authors>Marcelo Castelo Branco</Authors>
+		<Company>MCB</Company>
+		<PackageProjectUrl>https://github.com/MarceloCas/MCB.Core.Infra.CrossCutting</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/MarceloCas/MCB.Core.Infra.CrossCutting</RepositoryUrl>
+		<IncludeSymbols>True</IncludeSymbols>
+		<SymbolPackageFormat>symbols.nupkg</SymbolPackageFormat>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="MCB.Core.Infra.CrossCutting.Abstractions" Version="0.6.0-alpha" />
+	  <PackageReference Include="MCB.Core.Infra.CrossCutting.DependencyInjection.Abstractions" Version="0.6.0-alpha" />
+	  <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.14" />
+	  <PackageReference Include="protobuf-net" Version="3.1.22" />
+	</ItemGroup>
+
+</Project>
