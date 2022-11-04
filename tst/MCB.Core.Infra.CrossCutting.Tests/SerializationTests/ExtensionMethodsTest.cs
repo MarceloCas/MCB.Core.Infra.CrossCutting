@@ -53,20 +53,20 @@ public class ExtensionMethodsTest
         jsonSchema1.Should().NotBeNull();
         jsonSchema2.Should().NotBeNull();
     }
-}
 
-public class Customer
-{
-    public Guid Id { get; set; }
-    public string CreatedBy { get; set; }
-    public DateTimeOffset CreatedAt { get; set; }
-    public string UpdatedBy { get; set; }
-    public DateTimeOffset? UpdatedAt { get; set; }
-
-    public Customer()
+    public class Customer
     {
-        CreatedBy = string.Empty;
-        UpdatedBy = string.Empty;
-        UpdatedAt = default;
+        public Guid Id { get; set; }
+        public string CreatedBy { get; set; }
+        public DateTimeOffset CreatedAt { get; set; }
+        public string UpdatedBy { get; set; }
+        public DateTimeOffset? UpdatedAt { get; set; }
+
+        public Customer()
+        {
+            CreatedBy = string.Empty;
+            UpdatedBy = string.Empty;
+            UpdatedAt = default;
+        }
     }
 }
