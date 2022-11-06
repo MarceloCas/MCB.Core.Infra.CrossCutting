@@ -1,12 +1,9 @@
 ﻿using MCB.Core.Infra.CrossCutting.Abstractions.Serialization;
-using System.Runtime.CompilerServices;
 using System.Text.Json;
-
-[assembly: InternalsVisibleTo("MCB.Core.Infra.CrossCutting.Tests")]
 
 namespace MCB.Core.Infra.CrossCutting.Serialization;
 
-internal class JsonSerializer
+public class JsonSerializer
     : IJsonSerializer
 {
     // Fields

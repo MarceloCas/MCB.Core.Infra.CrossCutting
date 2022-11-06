@@ -36,7 +36,10 @@ This project is a source code of [MCB.Core.Infra.CrossCutting](https://www.nuget
 
 ## Features
 
+- DateTimeProvider
 - Json Serialization and Json Schema Generator
+- Protobuf serialization
+- Enum Utils
 
 
 ## Used stack

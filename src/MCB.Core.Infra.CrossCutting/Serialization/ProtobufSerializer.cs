@@ -1,12 +1,9 @@
 ﻿using MCB.Core.Infra.CrossCutting.Abstractions.Serialization;
 using ProtoBuf.Meta;
-using System.Runtime.CompilerServices;
-
-[assembly: InternalsVisibleTo("MCB.Core.Infra.CrossCutting.Tests")]
 
 namespace MCB.Core.Infra.CrossCutting.Serialization;
 
-internal class ProtobufSerializer
+public class ProtobufSerializer
     : IProtobufSerializer
 {
     // Public static methods
