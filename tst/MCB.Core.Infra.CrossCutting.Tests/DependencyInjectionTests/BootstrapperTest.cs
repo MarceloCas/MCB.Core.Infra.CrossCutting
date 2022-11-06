@@ -3,17 +3,17 @@ using MCB.Core.Infra.CrossCutting.Abstractions.DateTime;
 using MCB.Core.Infra.CrossCutting.Abstractions.Serialization;
 using MCB.Core.Infra.CrossCutting.Abstractions.Utils;
 using MCB.Core.Infra.CrossCutting.DateTime;
+using MCB.Core.Infra.CrossCutting.DependencyInjection;
 using MCB.Core.Infra.CrossCutting.DependencyInjection.Abstractions.Enums;
 using MCB.Core.Infra.CrossCutting.DependencyInjection.Abstractions.Interfaces;
 using MCB.Core.Infra.CrossCutting.DependencyInjection.Abstractions.Models;
-using MCB.Core.Infra.CrossCutting.IoC;
 using MCB.Core.Infra.CrossCutting.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 
-namespace MCB.Core.Infra.CrossCutting.Tests.IoCTests;
+namespace MCB.Core.Infra.CrossCutting.Tests.DependencyInjectionTests;
 
 public class BootstrapperTest
 {

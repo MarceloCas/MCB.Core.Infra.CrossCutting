@@ -5,7 +5,7 @@ using MCB.Core.Infra.CrossCutting.DateTime;
 using MCB.Core.Infra.CrossCutting.DependencyInjection.Abstractions.Interfaces;
 using MCB.Core.Infra.CrossCutting.Serialization;
 
-namespace MCB.Core.Infra.CrossCutting.IoC;
+namespace MCB.Core.Infra.CrossCutting.DependencyInjection;
 
 public static class Bootstrapper
 {
