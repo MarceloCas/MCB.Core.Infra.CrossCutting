@@ -24,7 +24,7 @@ public class ProtobufSerializerTest
 
         // Act
         var protobuf = new ProtobufSerializer().SerializeToProtobuf(customer);
-        var deserializedCustomer = new ProtobufSerializer().DeserializeFromProtobuf<Customer>(protobuf);
+        var deserializedCustomer = new ProtobufSerializer().DeserializeFromProtobuf<Customer>(protobuf)!;
 
         // Assert
         deserializedCustomer.Should().NotBeNull();

@@ -16,13 +16,13 @@ public class ExtensionMethodsTest
             Id = Guid.NewGuid(),
             CreatedBy = "marcelo.castelo@outlook.com",
             CreatedAt = DateTimeOffset.UtcNow,
-            UpdatedBy = null,
+            UpdatedBy = null!,
             UpdatedAt = null
         };
 
         // Act
         var json = new JsonSerializer().SerializeToJson(customer);
-        var deserializedCustomer = new JsonSerializer().DeserializeFromJson<Customer>(json);
+        var deserializedCustomer = new JsonSerializer().DeserializeFromJson<Customer>(json)!;
 
         // Assert
         customer.Id.Should().Be(deserializedCustomer.Id);
@@ -41,7 +41,7 @@ public class ExtensionMethodsTest
             Id = Guid.NewGuid(),
             CreatedBy = "marcelo.castelo@outlook.com",
             CreatedAt = DateTimeOffset.UtcNow,
-            UpdatedBy = null,
+            UpdatedBy = null!,
             UpdatedAt = null
         };
 

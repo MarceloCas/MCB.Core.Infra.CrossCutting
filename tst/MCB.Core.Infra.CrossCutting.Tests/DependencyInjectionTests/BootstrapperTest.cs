@@ -27,10 +27,10 @@ public class BootstrapperTest
         Bootstrapper.ConfigureDependencyInjection(dependencyInjectionContainer);
 
         // Assert
-        var dateTimeProviderRegistration = dependencyInjectionContainer.GetRegistrationCollection().FirstOrDefault(q => q.ServiceType == typeof(IDateTimeProvider));
-        var jsonSerializerRegistration = dependencyInjectionContainer.GetRegistrationCollection().FirstOrDefault(q => q.ServiceType == typeof(IJsonSerializer));
-        var protobufSerializerRegistration = dependencyInjectionContainer.GetRegistrationCollection().FirstOrDefault(q => q.ServiceType == typeof(IProtobufSerializer));
-        var utilsRegistration = dependencyInjectionContainer.GetRegistrationCollection().FirstOrDefault(q => q.ServiceType == typeof(IUtils));
+        var dateTimeProviderRegistration = dependencyInjectionContainer.GetRegistrationCollection().FirstOrDefault(q => q.ServiceType == typeof(IDateTimeProvider))!;
+        var jsonSerializerRegistration = dependencyInjectionContainer.GetRegistrationCollection().FirstOrDefault(q => q.ServiceType == typeof(IJsonSerializer))!;
+        var protobufSerializerRegistration = dependencyInjectionContainer.GetRegistrationCollection().FirstOrDefault(q => q.ServiceType == typeof(IProtobufSerializer))!;
+        var utilsRegistration = dependencyInjectionContainer.GetRegistrationCollection().FirstOrDefault(q => q.ServiceType == typeof(IUtils))!;
 
         dateTimeProviderRegistration.Should().NotBeNull();
         jsonSerializerRegistration.Should().NotBeNull();
