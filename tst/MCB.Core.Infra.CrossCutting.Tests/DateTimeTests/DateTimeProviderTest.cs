@@ -17,7 +17,7 @@ public class DateTimeProviderTest
         var utcNow = DateTimeOffset.UtcNow;
 
         // Act
-        var timeProviderUtcNow = new DateTimeProvider().GetDate();
+        var timeProviderUtcNow = new DateTimeProvider(getDateCustomFunction: null).GetDate();
 
         // Assert
         timeProviderUtcNow.Should().BeAfter(utcNow);
@@ -26,11 +26,10 @@ public class DateTimeProviderTest
     public void DateTimeProvider_Should_Return_GetDateCustomFuncion()
     {
         // Arrange
-        var dateTimeProvider = new DateTimeProvider();
         var utcNow = DateTimeOffset.UtcNow;
+        var dateTimeProvider = new DateTimeProvider(new Func<DateTimeOffset>(() => utcNow));
 
         // Act
-        dateTimeProvider.ChangeGetDateCustomFunction(new Func<DateTimeOffset>(() => utcNow));
         var timeProviderUtcNow = dateTimeProvider.GetDate();
 
         // Assert
